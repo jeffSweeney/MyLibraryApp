@@ -12,15 +12,19 @@ class DecodingService {
     static func decodeBooks() -> [Book] {
         var result = [Book]()
         
+        // MARK: Get Path String
         // Get the path string to the data
         if let pathString = Bundle.main.path(forResource: "Books", ofType: "json") {
+            // MARK: Get URL
             // Get the URL from the path string
             let url = URL(fileURLWithPath: pathString)
             
+            // MARK: Get Data Object
             // Get the data object
             do {
                 let data = try Data(contentsOf: url)
                 
+                // MARK: Decode Data
                 // Decode the data
                 do {
                     let decoder = JSONDecoder()
@@ -35,6 +39,7 @@ class DecodingService {
             }
         }
         
+        // MARK: Return Statement
         return result
     }
 }
