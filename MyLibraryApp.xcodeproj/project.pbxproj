@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		632164E52721EFE900182D81 /* MyLibraryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632164E42721EFE900182D81 /* MyLibraryAppApp.swift */; };
+		632164E52721EFE900182D81 /* MyLibraryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632164E42721EFE900182D81 /* MyLibraryApp.swift */; };
 		632164E72721EFE900182D81 /* MyLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632164E62721EFE900182D81 /* MyLibraryView.swift */; };
 		632164E92721EFEB00182D81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632164E82721EFEB00182D81 /* Assets.xcassets */; };
 		632164EC2721EFEB00182D81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632164EB2721EFEB00182D81 /* Preview Assets.xcassets */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		632164E12721EFE900182D81 /* MyLibraryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLibraryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		632164E42721EFE900182D81 /* MyLibraryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibraryAppApp.swift; sourceTree = "<group>"; };
+		632164E42721EFE900182D81 /* MyLibraryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibraryApp.swift; sourceTree = "<group>"; };
 		632164E62721EFE900182D81 /* MyLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLibraryView.swift; sourceTree = "<group>"; };
 		632164E82721EFEB00182D81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		632164EB2721EFEB00182D81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		632164D82721EFE900182D81 = {
 			isa = PBXGroup;
 			children = (
-				632164E42721EFE900182D81 /* MyLibraryAppApp.swift */,
+				632164E42721EFE900182D81 /* MyLibraryApp.swift */,
 				632164E32721EFE900182D81 /* MyLibraryApp */,
 				632164E22721EFE900182D81 /* Products */,
 			);
@@ -206,7 +206,7 @@
 				63E4B8082721F8F300044FBE /* Book.swift in Sources */,
 				63E4B80E272232E900044FBE /* BookCardView.swift in Sources */,
 				63E4B80A2721FAE500044FBE /* BookModel.swift in Sources */,
-				632164E52721EFE900182D81 /* MyLibraryAppApp.swift in Sources */,
+				632164E52721EFE900182D81 /* MyLibraryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

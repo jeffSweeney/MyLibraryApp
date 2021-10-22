@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ReadingView: View {
+    var book: Book
+    
     var body: some View {
-        Text("IMPLEMENT - ReadingView")
+        Text("IMPLEMENT - ReadingView - \(book.title)")
     }
 }
 
 struct ReadingView_Previews: PreviewProvider {
     static var previews: some View {
-        ReadingView()
+        let model = BookModel.instance
+        ReadingView(book: model.myBooks[0])
     }
 }
