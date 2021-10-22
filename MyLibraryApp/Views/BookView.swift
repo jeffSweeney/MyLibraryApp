@@ -17,6 +17,7 @@ struct BookView: View {
     
     var body: some View {
         VStack (alignment: .center) {
+            // MARK: Clickable Read
             NavigationLink(destination: {ReadingView(book: book)}) {
                 VStack {
                     Text("Read Now!")
@@ -31,6 +32,7 @@ struct BookView: View {
                 }
             }
             
+            // MARK: Mark for Later
             VStack (spacing: 10) {
                 Text("Mark for later!")
                     .font(.headline)
@@ -47,6 +49,7 @@ struct BookView: View {
                 }
             }
             
+            // MARK: Rate
             VStack {
                 Text("Rate \(book.title)")
                     .font(.headline)
