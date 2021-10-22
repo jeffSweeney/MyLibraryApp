@@ -11,7 +11,18 @@ struct ReadingView: View {
     var book: Book
     
     var body: some View {
-        Text("IMPLEMENT - ReadingView - \(book.title)")
+        TabView {
+            ForEach(0 ..< book.content.count, id: \.self) { contentIndex in
+                VStack {
+                    Text(book.content[contentIndex])
+                    Spacer()
+                    Text(String(contentIndex+1))
+                }
+                .padding()
+            }
+        }
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .automatic))
+        .navigationBarTitle(book.title)
     }
 }
 
