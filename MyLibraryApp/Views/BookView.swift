@@ -17,15 +17,18 @@ struct BookView: View {
     
     var body: some View {
         VStack (alignment: .center) {
-            Text("Read Now!")
-                .font(.title)
-                .padding(.top, 30)
-            
             NavigationLink(destination: {ReadingView(book: book)}) {
-                Image("cover\(book.id)")
-                    .resizable()
-                    .scaledToFit()
-                    .padding()
+                VStack {
+                    Text("Read Now!")
+                        .font(.title)
+                        .padding(.top, 30)
+                        .accentColor(.black)
+                    
+                    Image("cover\(book.id)")
+                        .resizable()
+                        .scaledToFit()
+                        .padding()
+                }
             }
             
             VStack (spacing: 10) {
