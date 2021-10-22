@@ -16,4 +16,20 @@ class BookModel: ObservableObject {
     private init() {
         myBooks = DecodingService.decodeBooks()
     }
+    
+    private func findIndex(_ forId: Int) -> Int? {
+        return myBooks.firstIndex(where: {$0.id == forId})
+    }
+    
+    func flipFavorite(forId: Int) {
+        if let atIndex = findIndex(forId) {
+            myBooks[atIndex].isFavorite.toggle()
+        }
+    }
+    
+    func updateRating(forId: Int, newRating: Int) {
+        if let atIndex = findIndex(forId) {
+            myBooks[atIndex].rating = newRating
+        }
+    }
 }
