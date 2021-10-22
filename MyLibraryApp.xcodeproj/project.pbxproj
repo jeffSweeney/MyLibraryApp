@@ -17,6 +17,7 @@
 		63E4B8082721F8F300044FBE /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B8072721F8F300044FBE /* Book.swift */; };
 		63E4B80A2721FAE500044FBE /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B8092721FAE500044FBE /* BookModel.swift */; };
 		63E4B80C272213FA00044FBE /* DecodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B80B272213FA00044FBE /* DecodingService.swift */; };
+		63E4B80E272232E900044FBE /* BookCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E4B80D272232E900044FBE /* BookCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		63E4B8072721F8F300044FBE /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		63E4B8092721FAE500044FBE /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		63E4B80B272213FA00044FBE /* DecodingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingService.swift; sourceTree = "<group>"; };
+		63E4B80D272232E900044FBE /* BookCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				632164E62721EFE900182D81 /* MyLibraryView.swift */,
 				63E4B8012721F84700044FBE /* BookView.swift */,
 				63E4B8032721F85700044FBE /* ReadingView.swift */,
+				63E4B80D272232E900044FBE /* BookCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				63E4B8042721F85700044FBE /* ReadingView.swift in Sources */,
 				632164E72721EFE900182D81 /* MyLibraryView.swift in Sources */,
 				63E4B8082721F8F300044FBE /* Book.swift in Sources */,
+				63E4B80E272232E900044FBE /* BookCardView.swift in Sources */,
 				63E4B80A2721FAE500044FBE /* BookModel.swift in Sources */,
 				632164E52721EFE900182D81 /* MyLibraryAppApp.swift in Sources */,
 			);

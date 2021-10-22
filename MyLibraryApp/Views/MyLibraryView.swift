@@ -8,9 +8,22 @@
 import SwiftUI
 
 struct MyLibraryView: View {
+    private var bookModel = BookModel.instance
+    
     var body: some View {
-        Text("IMPLEMENT - MyLibraryView")
-            .padding()
+        NavigationView {
+            ScrollView {
+                LazyVStack (spacing: 30) {
+                    ForEach(bookModel.myBooks) { book in
+                        NavigationLink(destination: {BookView(book: book)}) {
+                            BookCardView(book: book)
+                        }
+                    }
+                }
+                .padding(.horizontal, 10)
+                
+            }.navigationTitle(Text("My Library"))
+        }
     }
 }
 
