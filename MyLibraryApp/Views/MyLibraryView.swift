@@ -24,6 +24,9 @@ struct MyLibraryView: View {
                 
             }.navigationTitle(Text("My Library"))
         }
+        // This resolves a bug where the ReadingView would kickback to the
+        // BookView as you're swiping pages.
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 

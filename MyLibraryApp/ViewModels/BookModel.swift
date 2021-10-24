@@ -32,4 +32,10 @@ class BookModel: ObservableObject {
             myBooks[atIndex].rating = newRating
         }
     }
+    
+    func updateCurrentPageIndex(forId: Int, newIndex: Int) {
+        if let atIndex = findIndex(forId) {
+            myBooks[atIndex].currentPage = newIndex
+        }
+    }
 }
